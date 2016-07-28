@@ -14,7 +14,6 @@
 		220626891A1E345E00A45150 /* AAPLPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 220626851A1E345E00A45150 /* AAPLPreviewView.m */; };
 		2206268A1A1E345E00A45150 /* AAPLCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 220626871A1E345E00A45150 /* AAPLCameraViewController.m */; };
 		22CA31B81B022D1300D2DE70 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CA31B61B022D1300D2DE70 /* Launch Screen.storyboard */; };
-		EDEC4C8D1D48A4D7007C0786 /* 9e1ba8be0d819126f5387a510e0f96eb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EDEC4C8C1D48A4D7007C0786 /* 9e1ba8be0d819126f5387a510e0f96eb.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 		220626871A1E345E00A45150 /* AAPLCameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AAPLCameraViewController.m; sourceTree = "<group>"; };
 		22CA31B71B022D1300D2DE70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "AVCam/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
 		22CA31B91B0250C300D2DE70 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		EDEC4C8C1D48A4D7007C0786 /* 9e1ba8be0d819126f5387a510e0f96eb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9e1ba8be0d819126f5387a510e0f96eb.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +72,6 @@
 				22CA31B61B022D1300D2DE70 /* Launch Screen.storyboard */,
 				220626661A1E330400A45150 /* Main.storyboard */,
 				220626691A1E330400A45150 /* Images.xcassets */,
-				EDEC4C8C1D48A4D7007C0786 /* 9e1ba8be0d819126f5387a510e0f96eb.jpg */,
 				2206265C1A1E330400A45150 /* Supporting Files */,
 			);
 			path = AVCam;
@@ -146,7 +143,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EDEC4C8D1D48A4D7007C0786 /* 9e1ba8be0d819126f5387a510e0f96eb.jpg in Resources */,
 				22CA31B81B022D1300D2DE70 /* Launch Screen.storyboard in Resources */,
 				220626681A1E330400A45150 /* Main.storyboard in Resources */,
 				2206266A1A1E330400A45150 /* Images.xcassets in Resources */,

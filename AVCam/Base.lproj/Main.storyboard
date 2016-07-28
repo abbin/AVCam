@@ -32,7 +32,7 @@
                                 </connections>
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKm-yQ-Fi0">
-                                <rect key="frame" x="113" y="100" width="150" height="200"/>
+                                <rect key="frame" x="94" y="75" width="188" height="250"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="QKm-yQ-Fi0" secondAttribute="height" multiplier="3:4" id="JAE-wo-SmL"/>
@@ -115,7 +115,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="3eR-Rn-XpZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="4CN-5y-goF"/>
-                            <constraint firstItem="QKm-yQ-Fi0" firstAttribute="width" secondItem="3eR-Rn-XpZ" secondAttribute="width" multiplier="0.4" id="5Hv-YH-TtE"/>
+                            <constraint firstItem="QKm-yQ-Fi0" firstAttribute="width" secondItem="3eR-Rn-XpZ" secondAttribute="width" multiplier="0.5" id="5Hv-YH-TtE"/>
                             <constraint firstItem="QKm-yQ-Fi0" firstAttribute="centerY" secondItem="3eR-Rn-XpZ" secondAttribute="centerY" multiplier="0.8" id="7EX-Oj-X1P"/>
                             <constraint firstItem="QKm-yQ-Fi0" firstAttribute="centerX" secondItem="3eR-Rn-XpZ" secondAttribute="centerX" id="9vO-ZB-YD9"/>
                             <constraint firstAttribute="trailing" secondItem="3eR-Rn-XpZ" secondAttribute="trailing" id="AXb-Pk-5AK"/>

@@ -570,12 +570,6 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 				// The sample buffer is not retained. Create image data before saving the still image to the photo library asynchronously.
 				NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
                 
-                UIImage* flippedImage = [UIImage imageWithCGImage:[UIImage imageWithData:imageData].CGImage
-                                                            scale:[UIImage imageWithData:imageData].scale
-                                                      orientation:UIImageOrientationRightMirrored];
-                
-                NSData *data = UIImageJPEGRepresentation(flippedImage, 1);
-                
 				[PHPhotoLibrary requestAuthorization:^( PHAuthorizationStatus status ) {
 					if ( status == PHAuthorizationStatusAuthorized ) {
 						// To preserve the metadata, we create an asset from the JPEG NSData representation.
@@ -584,7 +578,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 						// In iOS 8, we save the image to a temporary file and use +[PHAssetChangeRequest creationRequestForAssetFromImageAtFileURL:].
 						if ( [PHAssetCreationRequest class] ) {
 							[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
-								[[PHAssetCreationRequest creationRequestForAsset] addResourceWithType:PHAssetResourceTypePhoto data:data options:nil];
+								[[PHAssetCreationRequest creationRequestForAsset] addResourceWithType:PHAssetResourceTypePhoto data:imageData options:nil];
 							} completionHandler:^( BOOL success, NSError *error ) {
 								if ( ! success ) {
 									NSLog( @"Error occurred while saving image to photo library: %@", error );
@@ -598,7 +592,7 @@ typedef NS_ENUM( NSInteger, AVCamSetupResult ) {
 
 							[[PHPhotoLibrary sharedPhotoLibrary] performChanges:^{
 								NSError *error = nil;
-								[data writeToURL:temporaryFileURL options:NSDataWritingAtomic error:&error];
+								[imageData writeToURL:temporaryFileURL options:NSDataWritingAtomic error:&error];
 								if ( error ) {
 									NSLog( @"Error occured while writing image data to a temporary file: %@", error );
 								}
